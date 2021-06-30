@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Time Tracker</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="__assets/lib/@bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__assets/lib/@icon-bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="__assets/css/app.css">
+
+</head>
+<body>
+
+
+    <div class="project-wrapper container">
+
+        <!-- Project Header -->
+        <div class="header mb-5">Javascript Time Tracker</div>
+
+        <!-- Project Main Section -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-9 mb-2">
+                <div class="project-list">
+
+                    <div class="item row p-3 mb-3 m-0 align-items-center">
+                        <div class="col-6">
+                            <span class="date d-block mb-2">12/24/2021</span>
+                            <h5 class="title d-block mb-3">Project Title Here - Lorem Ipsum Dummy Text For Typing Industry</h5>
+                            <span class="total-hour d-block">Total Hour : 0</span>
+                            <span class="avg-hour d-block">AVG. Hour : 0</span>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="countdown d-flex align-items-center justify-content-evenly">
+                                <div class="hour text-center">
+                                    <span class="time d-block">12</span>
+                                    <span class="text d-block">Hour</span>
+                                </div>
+                                <div class="colon">:</div>
+                                <div class="minute text-center">
+                                    <span class="time d-block">50</span>
+                                    <span class="text d-block">Minute</span>
+                                </div>
+                                <div class="colon">:</div>
+                                <div class="second text-center">
+                                    <span class="time d-block">26</span>
+                                    <span class="text d-block">Second</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="d-grid gap-1">
+                                <button type="button" class="btn btn-primary btn-sm">Start</button>
+                                <button type="button" class="btn btn-primary btn-sm">Pause</button>
+                                <button type="button" class="btn btn-primary btn-sm">Reset</button>
+                                <button type="button" class="btn btn-primary btn-sm">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 mb-2">
+                <h6 class="text-center list-title add mb-4">Add New Project</h6>
+                <form id="submit" method="post">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="task" placeholder="Enter Project Title" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Add Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Project Footer -->
+        <div class="footer d-flex justify-content-between">
+            <span>MD Imam Hossain</span>
+            <a href="https://github.com/mdimamhossain0049">GitHub</a>
+        </div>
+        
+    </div>
+    
+
+    <!-- External JS File -->
+    <script src="__assets/lib/@jquery/jquery.js"></script>
+    <script src="__assets/lib/@bootstrap/js/bootstrap.min.js"></script>
+    <script src="__assets/js/app.js"></script>
+
+    <script>
+        // Script Code Here
+    </script>
+    
+</body>
+</html>
